@@ -28,6 +28,7 @@ public class Client {
                 writer.flush();
 
                 // Receive message
+                System.out.println("Listening... wait for server");
                 message=reader.readLine();
                 System.out.println("Server: " + message);
             }

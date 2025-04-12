@@ -25,6 +25,7 @@ public class MyProcess extends Thread {
             String message;
             while (true) {
                 // Receive message
+                System.out.println("Listening... wait for client");
                 message=reader.readLine();
                 System.out.println("Client: " + message);
                 // Send message
